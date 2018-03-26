@@ -16,6 +16,50 @@ class DBHelper {
      * Fetch all restaurants.
      */
     static fetchRestaurants(callback) {
+
+        caches.open('restaurant-v1').then(cache => {
+            cache.match(DBHelper.DATABASE_URL).then(response => {
+                if (response) {
+                    response.clone().text().then(responseText => {
+                        callback(null, JSON.parse(responseText).restaurants);
+                        return;
+                    });
+                }
+            });
+        });
+
+        const restaurants = fetch(DBHelper.DATABASE_URL, {
+            mode: 'no-cors'
+        }).then(response => {
+            if (response) {
+                response.clone().text().then(responseText => {
+                    callback(null, JSON.parse(responseText).restaurants);
+                });
+            }
+        });
+
+        // callback(null, )
+        // return restaurants;
+
+
+        /*let xhr = new XMLHttpRequest();
+        xhr.open('GET', DBHelper.DATABASE_URL);
+        xhr.onload = () => {
+            if (xhr.status === 200) { // Got a success response from server!
+                const json = JSON.parse(xhr.responseText);
+                const restaurants = json.restaurants;
+                callback(null, restaurants);
+            } else { // Oops!. Got an error from server.
+                const error = (`Request failed. Returned status of ${xhr.status}`);
+                callback(error, null);
+            }
+        };
+        xhr.send();*/
+    }
+
+
+
+    /*static fetchRestaurants(callback) {
         caches.open('restaurant-v1').then(cache => {
             cache.match('data/restaurants.json').then(response => {
                 const newResponse = response.clone();
@@ -48,7 +92,7 @@ class DBHelper {
                 console.error(err);
             });
         });
-    }
+    }*/
 
     /**
      * Fetch a restaurant by its ID.
