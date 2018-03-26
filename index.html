@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Restaurant Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header role="banner">
+        <nav>
+            <h1>
+                <a href="/" role="link" tabindex="-1" title="Restaurant Reviews Home">Restaurant Reviews</a>
+            </h1>
+        </nav>
+        <a href="#filter-results" role="link" tabindex="-1" id="aria-content-link" title="Go to content">Go to content</a>
+    </header>
+
+    <main role="main" id="maincontent">
+        <section id="map-container" aria-hidden="true">
+            <div id="map"></div>
+        </section>
+        <section>
+            <div class="filter-options" id="filter-results">
+                <h2>Filter Results</h2>
+                <label>
+                    <select role="listbox" tabindex="-1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                        <option role="option" value="all">All Neighborhoods</option>
+                    </select>
+                </label>
+                <label>
+                    <select role="listbox" tabindex="-1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                        <option role="option" value="all">All Cuisines</option>
+                    </select>
+                </label>
+            </div>
+            <ul id="restaurants-list"></ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo" id="footer">
+        Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+
+    <script src="/js/dbhelper.js"></script>
+    <script src="/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap"></script>
+
+</body>
+
+</html>
