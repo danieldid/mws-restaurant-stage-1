@@ -4,6 +4,8 @@
 /* Global settings */
 
 *,
+*:before,
+*:after,
 html,
 body {
     box-sizing: border-box;
@@ -86,6 +88,11 @@ section {
     text-transform: uppercase;
 }
 
+.aria-label {
+    position: absolute;
+    left: -9999999px;
+}
+
 /* ====================== Navigation ====================== */
 
 nav {
@@ -122,7 +129,7 @@ nav {
         }
         /* Add a color to all links inside the list */
         a {
-            color: #0275d8;
+            color: #15527A;
             text-decoration: none;
             /* Add a color on mouse-over */
             &:hover {
@@ -267,11 +274,14 @@ nav {
         position: absolute;
         width: 100%;
     }
+    picture img {
+        width: 100%;
+    }
 }
 
 
 #restaurant-name {
-    color: #f18200;
+    color: #15527A;
     font-family: Arial, sans-serif;
     font-size: 2rem;
     font-weight: 200;
@@ -315,7 +325,7 @@ nav {
 #reviews-container {
     padding: 30px 40px 80px;
     h2 {
-        color: #f58500;
+        color: #15527A;
         font-size: 24pt;
         font-weight: 300;
         letter-spacing: -1px;

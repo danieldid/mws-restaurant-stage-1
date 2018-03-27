@@ -164,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
 
     const srcMedium = document.createElement('source');
     srcMedium.setAttribute('srcset', imageURLs.medium);
-    srcMedium.setAttribute('media', '(min-width: 600px)');
+    srcMedium.setAttribute('media', '(max-width: 799px)');
 
     const srcOriginal = document.createElement('source');
     srcOriginal.setAttribute('srcset', imageURLs.original);
