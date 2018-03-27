@@ -1,28 +1,41 @@
 let restaurant;
+let i = 0;
 var map;
+
+/*
+ *
+ *   Service Worker registration
+ *
+ */
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', loaded =>
+        navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('serviceWorker registered!');
+        }).catch(fail => {
+            console.error(fail);
+        })
+    );
+}
 
 /**
  * Initialize Google map, called from HTML.
  */
-
-window.addEventListener('load', loaded =>
-    window.initMap = () => {
-        fetchRestaurantFromURL((error, restaurant) => {
-            if (error) { // Got an error!
-                console.error(error);
-            } else {
-                self.map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 16,
-                    center: restaurant.latlng,
-                    scrollwheel: false
-                });
-                fillBreadcrumb();
-                DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
-            }
-        });
-    }
-);
-
+window.initMap = () => {
+    fetchRestaurantFromURL((error, restaurant) => {
+        if (error) { // Got an error!
+            console.error(error);
+        } else {
+            self.map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: restaurant.latlng,
+                scrollwheel: false
+            });
+            fillBreadcrumb();
+            DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
+        }
+    });
+}
 
 
 /**
@@ -54,25 +67,58 @@ fetchRestaurantFromURL = (callback) => {
  * Create restaurant HTML and add it to the webpage
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
-    const name = document.getElementById('restaurant-name');
-    name.innerHTML = restaurant.name;
+    console.log(i);
+    if (i === 0) {
+        const name = document.getElementById('restaurant-name');
+        name.innerHTML = restaurant.name;
 
-    const address = document.getElementById('restaurant-address');
-    address.innerHTML = restaurant.address;
+        const address = document.getElementById('restaurant-address');
+        address.innerHTML = restaurant.address;
 
-    const image = document.getElementById('restaurant-img');
+        const picture = document.getElementById('restaurant-img');
+
+        const imageURLs = DBHelper.imageUrlForRestaurant(restaurant);
+
+        const srcSmall = document.createElement('source');
+        srcSmall.setAttribute('srcset', imageURLs.small);
+        srcSmall.setAttribute('media', '(max-width: 599px)');
+
+        const srcMedium = document.createElement('source');
+        srcMedium.setAttribute('srcset', imageURLs.medium);
+        srcMedium.setAttribute('media', '(min-width: 600px)');
+
+        const srcOriginal = document.createElement('source');
+        srcOriginal.setAttribute('srcset', imageURLs.original);
+        srcOriginal.setAttribute('media', '(min-width: 800px)');
+
+        const image = document.createElement('img');
+        image.className = 'restaurant-img';
+        image.src = imageURLs.original;
+        image.setAttribute('alt', restaurant.name);
+
+        picture.append(srcSmall);
+        picture.append(srcMedium);
+        picture.append(srcOriginal);
+        picture.append(image);
+
+        // li.append(picture);
+
+        /*const image = document.getElementById('restaurant-img');
     image.className = 'restaurant-img'
-    image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    image.src = DBHelper.imageUrlForRestaurant(restaurant).original;*/
 
-    const cuisine = document.getElementById('restaurant-cuisine');
-    cuisine.innerHTML = restaurant.cuisine_type;
+        const cuisine = document.getElementById('restaurant-cuisine');
+        cuisine.innerHTML = restaurant.cuisine_type;
 
-    // fill operating hours
-    if (restaurant.operating_hours) {
-        fillRestaurantHoursHTML();
+        // fill operating hours
+        if (restaurant.operating_hours) {
+            fillRestaurantHoursHTML();
+        }
+        // fill reviews
+        fillReviewsHTML();
     }
-    // fill reviews
-    fillReviewsHTML();
+
+    i += 1;
 }
 
 /**

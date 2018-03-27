@@ -12,26 +12,26 @@
     <header role="banner">
         <nav>
             <h1>
-                <a href="/" role="link" tabindex="-1" title="Restaurant Reviews Home">Restaurant Reviews</a>
+                <a href="/" role="link" title="Restaurant Reviews Home">Restaurant Reviews</a>
             </h1>
         </nav>
-        <a href="#filter-results" role="link" tabindex="-1" id="aria-content-link" title="Go to content">Go to content</a>
+        <a href="#filter-results" role="link" id="aria-content-link" title="Go to content">Go to content</a>
     </header>
 
     <main role="main" id="maincontent">
-        <section id="map-container" aria-hidden="true">
+        <section id="map-container" aria-hidden="true" tabindex="-1">
             <div id="map"></div>
         </section>
         <section>
             <div class="filter-options" id="filter-results">
                 <h2>Filter Results</h2>
                 <label>
-                    <select role="listbox" tabindex="-1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+                    <select role="listbox" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
                         <option role="option" value="all">All Neighborhoods</option>
                     </select>
                 </label>
                 <label>
-                    <select role="listbox" tabindex="-1" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                    <select role="listbox" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
                         <option role="option" value="all">All Cuisines</option>
                     </select>
                 </label>

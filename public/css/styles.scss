@@ -3,7 +3,9 @@
 
 /* Global settings */
 
-*, html, body {
+*,
+html,
+body {
     box-sizing: border-box;
 }
 
@@ -87,16 +89,14 @@ section {
 /* ====================== Navigation ====================== */
 
 nav {
-    width: 100%;
-    // height: 80px;
+    width: 100%; // height: 80px;
     background-color: #252831;
     text-align: center;
     h1 {
         margin: auto;
         font-size: 2.5rem;
         a {
-            color: #fff;
-            // font-size: 14pt;
+            color: #fff; // font-size: 14pt;
             font-weight: 200;
             letter-spacing: 6px;
             text-transform: uppercase;
@@ -110,7 +110,7 @@ nav {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    width: 50%;
     /* Display list items side by side */
     li {
         display: inline;
@@ -356,7 +356,7 @@ nav {
     color: #666;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1440px) {
     .inside #map-container {
         display: block;
         height: 300px;
@@ -364,19 +364,33 @@ nav {
         position: inherit;
         width: 100%;
     }
+    .inside #breadcrumb {
+        width: 100%;
+    }
+    .inside {
+        #restaurant-container, #reviews-container {
+            padding: 20px 40px 30px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
     #breadcrumb {
         width: 100%;
     }
-    #restaurant-container, #reviews-container {
+    #restaurant-container,
+    #reviews-container {
         padding: 20px 30px;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 650px) {
-    .filter-options {h2 {
-        display: block;
-    }
+    .filter-options {
+        h2 {
+            display: block;
+        }
         label {
             display: block;
             select {
@@ -386,9 +400,13 @@ nav {
             }
         }
     }
-    #restaurants-list li {
-        flex-basis: 400px;
-        flex-grow: 1;
+    #restaurants-list {
+        padding: 0;
+        li {
+            flex-basis: 400px;
+            flex-grow: 1;
+            margin: 0;
+        }
     }
 }
 

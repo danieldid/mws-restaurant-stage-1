@@ -2,6 +2,7 @@ const CACHE_NAME = 'restaurant-v1';
 const IMG_CACHE = 'restaurant-image-v1';
 const urlsToCache = [
     '/',
+    '/restaurant.html',
     '/css/styles.css',
     '/js/main.js',
     '/js/dbhelper.js',
@@ -30,6 +31,10 @@ self.addEventListener('fetch', event => {
             event.respondWith(caches.match('/'));
             return;
         }
+        if (requestUrl.pathname.startsWith('/restaurant.html')) {
+            event.respondWith(caches.match('restaurant.html'));
+            return;
+        }
         // cache and serve local images
         if (requestUrl.pathname.startsWith('/img/')) {
             event.respondWith(servePhoto(event.request));
@@ -45,9 +50,7 @@ self.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(function (response) {
             // const myResponse = response.clone();
-            return response || fetch(event.request, {
-                mode: 'no-cors'
-            });
+            return response || fetch(event.request.clone());
         })
     );
 

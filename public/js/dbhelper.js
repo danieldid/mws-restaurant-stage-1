@@ -16,6 +16,7 @@ class DBHelper {
      * Fetch all restaurants.
      */
     static fetchRestaurants(callback) {
+        console.log('fetch restaurants');
 
         caches.open('restaurant-v1').then(cache => {
             cache.match(DBHelper.DATABASE_URL).then(response => {
