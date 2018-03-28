@@ -2,22 +2,6 @@ let restaurant;
 let i = 0;
 var map;
 
-/*
- *
- *   Service Worker registration
- *
- */
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', loaded =>
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-            console.log('serviceWorker registered!');
-        }).catch(fail => {
-            console.error(fail);
-        })
-    );
-}
-
 /**
  * Initialize Google map, called from HTML.
  */
@@ -94,7 +78,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
         const image = document.createElement('img');
         image.className = 'restaurant-img';
         image.src = imageURLs.original;
-        image.setAttribute('alt', restaurant.name);
+        image.setAttribute('alt', `Restaurant photo of ${restaurant.name} in ${restaurant.address}`);
 
         picture.append(srcSmall);
         picture.append(srcMedium);
@@ -146,7 +130,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     const container = document.getElementById('reviews-container');
-    const title = document.createElement('h2');
+    const title = document.createElement('h3');
     title.innerHTML = 'Reviews';
     container.appendChild(title);
 

@@ -4,22 +4,6 @@ let restaurants,
 var map
 var markers = []
 
-/*
- *
- *   Service Worker registration
- *
- */
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', loaded =>
-        navigator.serviceWorker.register('/sw.js').then(registration => {
-            console.log('serviceWorker registered!');
-        }).catch(fail =>{
-            console.error(fail);
-        })
-    );
-}
-
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -182,7 +166,7 @@ createRestaurantHTML = (restaurant) => {
     li.append(picture);
     // li.append(image);
 
-    const name = document.createElement('h1');
+    const name = document.createElement('h3');
     name.innerHTML = restaurant.name;
     li.append(name);
 

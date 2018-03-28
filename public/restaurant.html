@@ -15,18 +15,20 @@
     <!-- Beginning header -->
     <header role="banner">
         <!-- Beginning nav -->
-        <nav>
+        <!-- https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/breadcrumb/index.html -->
+        <nav aria-label="Breadcrumb">
             <h1>
                 <a href="/" role="link" title="Restaurant Reviews Home">Restaurant Reviews</a>
             </h1>
+            <!-- Beginning breadcrumb -->
+            <ul id="breadcrumb">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+            <!-- End breadcrumb -->
         </nav>
-        <!-- Beginning breadcrumb -->
-        <ul id="breadcrumb">
-            <li>
-                <a href="/">Home</a>
-            </li>
-        </ul>
-        <!-- End breadcrumb -->
+
         <!-- End nav -->
     </header>
     <!-- End header -->
@@ -35,12 +37,12 @@
     <main role="main" id="maincontent">
         <!-- Beginning map -->
         <section id="map-container" aria-hidden="true" tabindex="-1">
-            <div id="map"></div>
+            <div role="application" id="map"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
         <section id="restaurant-container">
-            <h1 id="restaurant-name"></h1>
+            <h2 id="restaurant-name"></h2>
             <picture id="restaurant-img"></picture>
             <p id="restaurant-cuisine"></p>
             <p id="restaurant-address"></p>
@@ -63,9 +65,10 @@
 
     <!-- Beginning scripts -->
     <!-- Database helpers -->
-    <script src="js/dbhelper.js"></script>
+    <script src="/js/dbhelper.js"></script>
     <!-- Main javascript file -->
-    <script src="js/restaurant_info.js"></script>
+    <script src="/js/restaurant_info.js"></script>
+    <script src="/js/sw_init.js"></script>
     <!-- Google Maps -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap"></script>
     <!-- End scripts -->
