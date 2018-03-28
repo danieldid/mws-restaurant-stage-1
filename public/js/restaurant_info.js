@@ -78,7 +78,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
         const image = document.createElement('img');
         image.className = 'restaurant-img';
         image.src = imageURLs.original;
-        image.setAttribute('alt', `Restaurant photo of ${restaurant.name} in ${restaurant.address}`);
+        image.setAttribute('alt', `${restaurant.name} Restaurant`);
 
         picture.append(srcSmall);
         picture.append(srcMedium);
