@@ -132,7 +132,8 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
     restaurants.forEach(restaurant => {
         ul.append(createRestaurantHTML(restaurant));
     });
-    // addMarkersToMap();
+    if(document.querySelector('.gm-style'))
+        addMarkersToMap();
     setObservable();
 }
 

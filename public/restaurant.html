@@ -38,7 +38,7 @@
     <main role="main" id="maincontent">
         <!-- Beginning map -->
         <section id="map-container" aria-hidden="true" tabindex="-1">
-            <div role="application" id="map"></div>
+            <div role="application" onclick="onMapClick();" id="map"></div>
         </section>
         <!-- End map -->
         <!-- Beginning restaurant -->
@@ -71,8 +71,19 @@
     <script src="/js/restaurant_info.js"></script>
     <script src="/js/sw_init.js"></script>
     <!-- Google Maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap"></script>
+    <!-- script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap"></script -->
     <!-- End scripts -->
+
+    <script>
+        onMapClick = () => {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap';
+            script.setAttribute('defer', '');
+            script.setAttribute('async', '');
+            document.body.appendChild(script);
+        }
+    </script>
 
 </body>
 

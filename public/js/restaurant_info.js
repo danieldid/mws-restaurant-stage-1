@@ -2,6 +2,19 @@ let restaurant;
 let i = 0;
 var map;
 
+/*
+*   When DOM's ready
+*/
+document.addEventListener('DOMContentLoaded', (event) => {
+    fetchRestaurantFromURL((error, restaurant) => {
+        if (error) {
+            console.error(error);
+        } else {
+            fillBreadcrumb();
+        }
+    });
+});
+
 /**
  * Initialize Google map, called from HTML.
  */
@@ -26,6 +39,7 @@ window.initMap = () => {
  * Get current restaurant from page URL.
  */
 fetchRestaurantFromURL = (callback) => {
+    console.log('get restaurant');
     if (self.restaurant) { // restaurant already fetched!
         callback(null, self.restaurant)
         return;
