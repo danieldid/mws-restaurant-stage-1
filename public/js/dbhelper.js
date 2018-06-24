@@ -8,17 +8,17 @@ class DBHelper {
      * Change this to restaurants.json file location on your server.
      */
     static get DATABASE_URL() {
-        const port = 8887 // Change this to your server port
-        return `data/restaurants.json`; //http://localhost:${port}/
+        // const port = 8887 // Change this to your server port
+        // return `data/restaurants.json`; //http://localhost:${port}/
+
+        return `http://localhost:1337/restaurants`;
     }
 
     /**
      * Fetch all restaurants.
      */
     static fetchRestaurants(callback) {
-        console.log('fetch restaurants');
-
-        caches.open('restaurant-v1').then(cache => {
+        /* caches.open('restaurant-v2').then(cache => {
             cache.match(DBHelper.DATABASE_URL).then(response => {
                 if (response) {
                     response.clone().text().then(responseText => {
@@ -27,73 +27,26 @@ class DBHelper {
                     });
                 }
             });
+        }); */
+
+        const restaurants = fetch('http://localhost:1337/restaurants').then(res => {
+            return res.json();
+        }).then(data => {
+            // console.log(data);
+            callback(null, data);
+            return data;
         });
 
-        const restaurants = fetch(DBHelper.DATABASE_URL, {
-            mode: 'no-cors'
+        /* const restaurants = fetch(DBHelper.DATABASE_URL, {
+            mode: 'cors'
         }).then(response => {
             if (response) {
                 response.clone().text().then(responseText => {
                     callback(null, JSON.parse(responseText).restaurants);
                 });
             }
-        });
-
-        // callback(null, )
-        // return restaurants;
-
-
-        /*let xhr = new XMLHttpRequest();
-        xhr.open('GET', DBHelper.DATABASE_URL);
-        xhr.onload = () => {
-            if (xhr.status === 200) { // Got a success response from server!
-                const json = JSON.parse(xhr.responseText);
-                const restaurants = json.restaurants;
-                callback(null, restaurants);
-            } else { // Oops!. Got an error from server.
-                const error = (`Request failed. Returned status of ${xhr.status}`);
-                callback(error, null);
-            }
-        };
-        xhr.send();*/
+        }); */
     }
-
-
-
-    /*static fetchRestaurants(callback) {
-        caches.open('restaurant-v1').then(cache => {
-            cache.match('data/restaurants.json').then(response => {
-                const newResponse = response.clone();
-
-                // when offline
-                if (typeof response !== undefined) {
-                    response = fetch(DBHelper.DATABASE_URL, {
-                        mode: 'no-cors'
-                    }).then(res => {
-                        return res.clone();
-                    });
-                }
-
-                console.log(response);
-
-                // returning json
-                response.then(responseText => {
-                    responseText.text().then(text => {
-                        callback(null, JSON.parse(text).restaurants);
-                    }).catch(err => {
-                        console.log('Error encountered in text:');
-                        console.error(err);
-                    });
-                }).catch(err => {
-                    console.log('Error encountered in cache:');
-                    console.error(err);
-                });
-            }).catch(err => {
-                console.log('Error encountered in caches:');
-                console.error(err);
-            });
-        });
-    }*/
 
     /**
      * Fetch a restaurant by its ID.

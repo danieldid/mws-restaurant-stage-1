@@ -152,6 +152,16 @@ nav {
     height: 400px;
     width: 100%;
     background-color: #ccc;
+    position: relative;
+    &:before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "Click to show on map!";
+        font-size: 125%;
+        text-align: center;
+        bottom: 3em;
+    }
 }
 
 /* ====================== Restaurant Filtering ====================== */

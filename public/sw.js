@@ -1,5 +1,5 @@
-const CACHE_NAME = 'restaurant-v1';
-const IMG_CACHE = 'restaurant-image-v1';
+const CACHE_NAME = 'restaurant-v2';
+const IMG_CACHE = 'restaurant-image-v2';
 const urlsToCache = [
     '/',
     '/restaurant.html',

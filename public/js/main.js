@@ -132,6 +132,7 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
         ul.append(createRestaurantHTML(restaurant));
     });
     addMarkersToMap();
+    setObservable();
 }
 
 /**
@@ -139,25 +140,33 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
     const li = document.createElement('li');
+    li.setAttribute('class', 'restaurant-li');
+
     const picture = document.createElement('picture');
+    picture.setAttribute('class', 'restaurant-img');
+
     const imageURLs = DBHelper.imageUrlForRestaurant(restaurant);
 
     const srcSmall = document.createElement('source');
-    srcSmall.setAttribute('srcset', imageURLs.small);
+    srcSmall.setAttribute('srcset', '');
+    srcSmall.setAttribute('data-srcset', imageURLs.small);
     srcSmall.setAttribute('media', '(max-width: 599px)');
 
     const srcMedium = document.createElement('source');
-    srcMedium.setAttribute('srcset', imageURLs.medium);
+    srcMedium.setAttribute('srcset', '');
+    srcMedium.setAttribute('data-srcset', imageURLs.medium);
     srcMedium.setAttribute('media', '(max-width: 799px)');
 
     const srcOriginal = document.createElement('source');
-    srcOriginal.setAttribute('srcset', imageURLs.original);
+    srcOriginal.setAttribute('srcset', '');
+    srcOriginal.setAttribute('data-srcset', imageURLs.original);
     srcOriginal.setAttribute('media', '(min-width: 800px)');
 
     const image = document.createElement('img');
     image.className = 'restaurant-img';
-    image.src = imageURLs.original;
+    image.src = '';
     image.setAttribute('alt', restaurant.name);
+    image.setAttribute('data-src', imageURLs.original);
 
     picture.append(srcSmall);
     picture.append(srcMedium);
@@ -198,4 +207,45 @@ addMarkersToMap = (restaurants = self.restaurants) => {
         });
         self.markers.push(marker);
     });
+}
+
+/*
+*   IntersectionObserver - load images when visible in ViewPort
+*/
+
+setObservable = () => {
+    const restaurantImgs = document.querySelectorAll('.restaurant-img');
+
+    observer = new IntersectionObserver(entries => {
+        root: document.getElementById('#restaurants-list');
+
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                entry.target.childNodes.forEach(nodes => {
+                    // src element
+                    if(nodes.dataset.srcset !== undefined) {
+                        nodes.setAttribute('srcset', nodes.dataset.srcset);
+                    } else { // image element
+                        nodes.setAttribute('src', nodes.dataset.src);
+                    }
+                });
+                console.log('in the view');
+            } else {
+                console.log('out of view');
+            }
+        });
+    });
+
+    restaurantImgs.forEach(image => {
+        observer.observe(image);
+    });
+}
+
+onMapClick = () => {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA1anHP4EqVGlYIjoeuMUzb3hoFFo7gO_c&libraries=places&callback=initMap';
+    script.setAttribute('defer', '');
+    script.setAttribute('async', '');
+    document.body.appendChild(script);
 }
