@@ -1,5 +1,5 @@
-const CACHE_NAME = 'restaurant-v2';
-const IMG_CACHE = 'restaurant-image-v2';
+const CACHE_NAME = 'restaurant-v3';
+const IMG_CACHE = 'restaurant-image-v3';
 const urlsToCache = [
     '/',
     '/restaurant.html',
@@ -7,7 +7,9 @@ const urlsToCache = [
     '/js/main.js',
     '/js/dbhelper.js',
     '/js/restaurant_info.js',
-    '/data/restaurants.json'
+    '/js/idb.js',
+    '/js/sw_init.js',
+    '/js/sw.js',
 ];
 
 
@@ -25,6 +27,7 @@ self.addEventListener('install', install => {
 
 self.addEventListener('fetch', event => {
     const requestUrl = new URL(event.request.url);
+    console.log(requestUrl);
 
     if (requestUrl.origin === location.origin) {
         if (requestUrl.pathname === '/') {
@@ -53,48 +56,6 @@ self.addEventListener('fetch', event => {
             return response || fetch(event.request.clone());
         })
     );
-
-
-    /*event.respondWith(
-        caches.match(event.request)
-        .then(response => {
-            // Cache hit - return response
-            if (response) {
-                console.log('cached content delivered ' + event.request.url);
-                return response;
-            }
-
-            // IMPORTANT: Clone the request. A request is a stream and
-            // can only be consumed once. Since we are consuming this
-            // once by cache and once by the browser for fetch, we need
-            // to clone the response.
-            var fetchRequest = event.request.clone();
-
-            return fetch(fetchRequest).then(
-                response => {
-                    // Check if we received a valid response
-                    if(!response || response.status !== 200 || response.type !== 'basic') {
-                        return response;
-                    }
-
-                    // IMPORTANT: Clone the response. A response is a stream
-                    // and because we want the browser to consume the response
-                    // as well as the cache consuming the response, we need
-                    // to clone it so we have two streams.
-                    var responseToCache = response.clone();
-
-                    caches.open(CACHE_NAME)
-                        .then(cache => {
-                        cache.put(event.request, responseToCache);
-                    });
-
-                    return response;
-                }
-            );
-        }).catch(err => {
-            console.error(err);
-        })
-    );*/
 });
 
 function servePhoto(request) {

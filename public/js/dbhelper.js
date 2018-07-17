@@ -18,34 +18,56 @@ class DBHelper {
      * Fetch all restaurants.
      */
     static fetchRestaurants(callback) {
-        /* caches.open('restaurant-v2').then(cache => {
-            cache.match(DBHelper.DATABASE_URL).then(response => {
-                if (response) {
-                    response.clone().text().then(responseText => {
-                        callback(null, JSON.parse(responseText).restaurants);
-                        return;
-                    });
-                }
-            });
-        }); */
-
-        const restaurants = fetch('http://localhost:1337/restaurants').then(res => {
-            return res.json();
-        }).then(data => {
-            console.log(data);
-            callback(null, data);
-            return data;
+        // open database and create object store
+        const dbPromise = idb.open('mws', 1, upgradeDB => {
+            const idbRestaurants = upgradeDB.createObjectStore('restaurants');
         });
 
-        /* const restaurants = fetch(DBHelper.DATABASE_URL, {
-            mode: 'cors'
-        }).then(response => {
-            if (response) {
-                response.clone().text().then(responseText => {
-                    callback(null, JSON.parse(responseText).restaurants);
+        let restaurants = null;
+
+        // when online fetch data and store it in idb
+        if(navigator.onLine) {
+            console.log('online');
+
+            // fetch external source
+            restaurants = fetch('http://localhost:1337/restaurants').then(res => {
+                // clone response
+                res.clone().text().then(responseText => {
+                    dbPromise.then(db => {
+                        const tx = db.transaction('restaurants', 'readwrite');
+                        // put data into object store
+                        tx.objectStore('restaurants').put(JSON.parse(responseText), 'data');
+                        return tx.complete;
+                    });
                 });
-            }
-        }); */
+                // return data to restaurants
+                return res.json();
+            }).then(data => {
+                callback(null, data);
+                return data;
+            });
+        } else { // when offline get data from idb
+            console.log('offline');
+
+            restaurants = dbPromise.then(db => {
+                const tx = db.transaction('restaurants', 'readwrite');
+
+                // read data from restaurants object store
+                return tx.objectStore('restaurants').getAll().then(data => {
+                    // return data to restaurants
+                    callback(null, data[0]);
+                    return data[0];
+                });
+            }).then((data) => {
+                console.log(data);
+                callback(null, data);
+                return data;
+            }).catch(err => {
+                console.error(err);
+                return null;
+            });
+        }
+
     }
 
     /**

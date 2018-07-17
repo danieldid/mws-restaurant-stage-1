@@ -28,7 +28,7 @@ window.initMap = () => {
                 center: restaurant.latlng,
                 scrollwheel: false
             });
-            fillBreadcrumb();
+            // fillBreadcrumb();
             DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
         }
     });
