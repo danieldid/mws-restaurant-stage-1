@@ -16,7 +16,7 @@ import {
     getRestByCuisineNeighborhood,
     urlForRestaurant,
     sendFavorite,
-    setFavorite
+    setAsFavorite
 } from './db';
 
 import {
@@ -114,7 +114,7 @@ data-toggle-off='{"content": "favorite_border", "label": "Unfavorite it"}'>
         const restId = e.target.id;
         const isFavorite = e.target.parentElement.getAttribute('aria-pressed') === 'true';
 
-        setFavorite(restId, isFavorite)
+        setAsFavorite(restId, isFavorite)
             .then(() => sendFavorite(restId, isFavorite))
             .then(response => response.json())
             .catch((error) => {

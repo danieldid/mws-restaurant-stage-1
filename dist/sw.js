@@ -1,4 +1,4 @@
-importScripts("precache-manifest.4ffbb92619ce159c4a38bf912ba6df61.js", "https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
+importScripts("precache-manifest.b519fd53ec1fa74b8552aa7663689fc5.js", "https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js");
 
 workbox.setConfig({ debug: true });
 
@@ -144,3 +144,4 @@ workbox.skipWaiting();
 workbox.clientsClaim();
 
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
+

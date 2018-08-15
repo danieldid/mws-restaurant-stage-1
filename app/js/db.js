@@ -1,4 +1,3 @@
-/* global google */
 import {
     oneLineTrim
 } from 'common-tags';
@@ -49,7 +48,7 @@ export const loadRestaurants = () => fetch(getAllRestUrl(), {
         return localForageData(dbPrefixRestaurant);
     });
 
-export const setFavorite = (restId, isFavorite) => {
+export const setAsFavorite = (restId, isFavorite) => {
     return localForage.getItem(dbPrefixRestaurant)
         .then((items) => {
             for (let i = 0; i < items.length; i += 1) {
