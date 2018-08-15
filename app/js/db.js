@@ -12,7 +12,7 @@ import {
 
 extendPrototype(localForage);
 
-const dbPrefixRests = 'restaurants';
+const dbPrefixRestaurant = 'restaurants';
 const dbPrefixReview = 'review';
 
 const getServer = () => 'http://localhost:1337';
@@ -41,16 +41,16 @@ export const loadRestaurants = () => fetch(getAllRestUrl(), {
     })
     .then(response => response
         .json()
-        .then(json => localForage.setItem(dbPrefixRests, json))
-        .then(() => localForage.getItem(dbPrefixRests))
+        .then(json => localForage.setItem(dbPrefixRestaurant, json))
+        .then(() => localForage.getItem(dbPrefixRestaurant))
         .then(restaurants => restaurants))
     .catch(() => {
         // offline
-        return localForageData(dbPrefixRests);
+        return localForageData(dbPrefixRestaurant);
     });
 
 export const setFavorite = (restId, isFavorite) => {
-    return localForage.getItem(dbPrefixRests)
+    return localForage.getItem(dbPrefixRestaurant)
         .then((items) => {
             for (let i = 0; i < items.length; i += 1) {
                 if (parseInt(items[i].id, 10) === parseInt(restId, 10)) {
@@ -58,7 +58,7 @@ export const setFavorite = (restId, isFavorite) => {
                     break;
                 }
             }
-            return localForage.setItem(dbPrefixRests, items);
+            return localForage.setItem(dbPrefixRestaurant, items);
         });
 };
 

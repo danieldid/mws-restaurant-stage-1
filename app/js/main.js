@@ -32,15 +32,15 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 let globalLazyLoad;
-let globalRestCache;
+let globalRestaurantCache;
 
-const setRestCache = (restaurants) => {
-    globalRestCache = restaurants;
+const setRestaurantCache = (restaurants) => {
+    globalRestaurantCache = restaurants;
 };
-const getRestContainerEl = () => document.querySelector('.cards');
+const getRestaurantContainerElement = () => document.querySelector('.cards');
 
 const resetRestaurants = () => {
-    getRestContainerEl().innerHTML = '';
+    getRestaurantContainerElement().innerHTML = '';
     cleanMarkers();
 };
 
@@ -50,7 +50,7 @@ const getHTMLFromElement = (el) => {
     return wrap.innerHTML;
 };
 
-const createRestaurantCardEl = (restaurant) => {
+const createRestaurantCardElement = (restaurant) => {
     const wrap = document.createElement('div');
     wrap.className = 'mdc-card demo-card demo-card--hero';
 
@@ -127,7 +127,7 @@ data-toggle-off='{"content": "favorite_border", "label": "Unfavorite it"}'>
 
 const fillRestaurantsHTML = (restaurants) => {
     restaurants.forEach((restaurant) => {
-        getRestContainerEl().append(createRestaurantCardEl(restaurant));
+        getRestaurantContainerElement().append(createRestaurantCardElement(restaurant));
     });
     globalLazyLoad = new LazyLoad({ threshold: 0 });
 };
@@ -158,7 +158,7 @@ const updateRestaurants = (restaurants = false) => {
     resetRestaurants();
     fillRestaurantsHTML(filtered);
     addMarkersToMap(filtered);
-    setRestCache(filtered);
+    setRestaurantCache(filtered);
 };
 
 const loadAndUpdateRestaurants = () => {
@@ -193,7 +193,7 @@ const fetchRestaurants = () => {
 
 
 const renderMap = () => {
-    initMap(400, 'map', () => globalRestCache)
+    initMap(400, 'map', () => globalRestaurantCache)
         .then(() => {
         fetchRestaurants();
     });
