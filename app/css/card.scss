@@ -1,0 +1,42 @@
+@import "@material/card/mdc-card";
+.my-card {
+    height: 350px;
+    width: 350px;
+}
+
+.my-card__media {
+    background-image: url('../img/1.jpg');
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.demo-card {
+    width: 350px;
+    margin: 48px 0;
+}
+
+.demo-card--hero {
+    margin: 10px auto;
+}
+
+.demo-card__primary {
+    padding: 1rem;
+}
+
+.demo-card__title {
+    margin: 0;
+}
+
+.demo-card__subtitle {
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0;
+}
+
+.demo-card__secondary {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0 1rem 8px 1rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Restaurant Reviews">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Reviews</title>
+
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Restaurant Reviews">
+    <link rel="icon" sizes="192x192" href="img/icons/icon_192.png">
+
+    <meta name="theme-color" content="#15527A">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="mdc-typography">
+
+    <a href="#content" class="skip-to-content">Skip to content</a>
+
+    <noscript>
+            <p>To see the restaurant map and read reviews, please enable javascript in your browser.</p>
+        </noscript>
+
+    <header>
+        <nav>
+            <h1><a href="/">Restaurant Reviews</a></h1>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="map-container" role="application" aria-label="Map with restaurants">
+            <div id="map"></div>
+        </section>
+        <section id="content">
+            <div class="filter-options">
+                <h2>Filter Results</h2>
+                <select id="neighborhoods-select" name="neighborhoods" aria-label="Neighbourhoods">
+                        <option value="all">All Neighborhoods</option>
+                    </select>
+                <select id="cuisines-select" name="cuisines" aria-label="Cuisines">
+                        <option value="all">All Cuisines</option>
+                    </select>
+            </div>
+            <div class="cards"></div>
+        </section>
+    </main>
+    <aside id="notifications">
+    </aside>
+
+    <footer id="footer">
+        Copyright (c) 2018 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>

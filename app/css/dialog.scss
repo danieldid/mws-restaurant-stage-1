@@ -1,0 +1,27 @@
+@import "@material/fab/mdc-fab";
+@import "@material/dialog/mdc-dialog";
+@import "@material/textfield/mdc-text-field";
+@import "@material/line-ripple/mdc-line-ripple";
+@import "@material/floating-label/mdc-floating-label";
+@import "@material/form-field/mdc-form-field";
+@import "@material/radio/mdc-radio";
+
+.mdc-dialog__body {
+    margin-top: 70px !important;
+}
+
+.app-fab--absolute {
+    position: fixed !important;
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+}
+
+@media(min-width: 1000px) {
+    .app-fab--absolute {
+        display: none !important;
+    }
+}
+
+.mdc-text-field--fullwidth {
+    width: 100% !important;
+}

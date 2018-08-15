@@ -1,0 +1,9 @@
+@import "@material/button/mdc-button";
+@import "@material/typography/mdc-typography";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/snackbar/mdc-snackbar";
+
+.rating {
+    float: right;
+    margin: 15px 5px;
+}

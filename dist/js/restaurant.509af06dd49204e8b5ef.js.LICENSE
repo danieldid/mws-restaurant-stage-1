@@ -1,0 +1,1296 @@
+/*!***************************************************!*\
+  !*** ./node_modules/@material/base/foundation.js ***!
+  \***************************************************/
+
+/*! exports provided: default */
+
+/*! exports used: default */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!**************************************************!*\
+  !*** ./node_modules/@material/base/component.js ***!
+  \**************************************************/
+
+/*! exports provided: default */
+
+/*! exports used: default */
+
+/*! ./foundation */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!***********************************************!*\
+  !*** ./node_modules/@material/ripple/util.js ***!
+  \***********************************************/
+
+/*! exports provided: supportsCssVariables, applyPassive, getMatchesProperty, getNormalizedEventCoords */
+
+/*! all exports used */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!************************************************************!*\
+  !*** ./node_modules/@material/ripple/index.js + 3 modules ***!
+  \************************************************************/
+
+/*! exports provided: MDCRipple, MDCRippleFoundation, RippleCapableSurface, util */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/component.js because of ./node_modules/@material/form-field/index.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/foundation.js because of ./node_modules/@material/form-field/foundation.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/util.js because of ./node_modules/@material/textfield/index.js */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!**********************************************!*\
+  !*** ./node_modules/@material/base/index.js ***!
+  \**********************************************/
+
+/*! exports provided: MDCFoundation, MDCComponent */
+
+/*! exports used: MDCComponent, MDCFoundation */
+
+/*! ./foundation */
+
+/*! ./component */
+
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! ./urls */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/common-tags/es/index.js + 48 modules ***!
+  \***********************************************************/
+
+/*! exports provided: TemplateTag, trimResultTransformer, stripIndentTransformer, replaceResultTransformer, replaceSubstitutionTransformer, replaceStringTransformer, inlineArrayTransformer, splitStringTransformer, removeNonPrintingValuesTransformer, commaLists, commaListsAnd, commaListsOr, html, codeBlock, source, safeHtml, oneLine, oneLineTrim, oneLineCommaLists, oneLineCommaListsOr, oneLineCommaListsAnd, inlineLists, oneLineInlineLists, stripIndent, stripIndents */
+
+/*! all exports used */
+
+/*!***********************************!*\
+  !*** ./app/js/lazyload.es2015.js ***!
+  \***********************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!**********************!*\
+  !*** ./app/js/db.js ***!
+  \**********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! common-tags */
+
+/*! @material/snackbar */
+
+/*! localforage */
+
+/*! localforage-startswith */
+
+/*!******************************************************!*\
+  !*** ./node_modules/localforage/dist/localforage.js ***!
+  \******************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! ./../../webpack/buildin/global.js */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/@material/selection-control/index.js ***!
+  \***********************************************************/
+
+/*! exports provided: MDCSelectionControlState, MDCSelectionControl */
+
+/*! @material/ripple/index */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!**************************************************************!*\
+  !*** ./node_modules/@material/snackbar/index.js + 3 modules ***!
+  \**************************************************************/
+
+/*! exports provided: MDCSnackbarFoundation, MDCSnackbar */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/index.js because of ./node_modules/@material/dialog/index.js */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!**************************************************!*\
+  !*** ./node_modules/normalize.css/normalize.css ***!
+  \**************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! !../mini-css-extract-plugin/dist/loader.js!../css-loader!../sass-loader/lib/loader.js??ref--6-3!../postcss-loader/lib??ref--6-4!./normalize.css */
+
+/*! ../style-loader/lib/addStyles.js */
+
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--6-3!./node_modules/postcss-loader/lib??ref--6-4!./node_modules/normalize.css/normalize.css ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!*****************************!*\
+  !*** ./app/css/common.scss ***!
+  \*****************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js??ref--6-3!../../node_modules/postcss-loader/lib??ref--6-4!./common.scss */
+
+/*! ../../node_modules/style-loader/lib/addStyles.js */
+
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--6-3!./node_modules/postcss-loader/lib??ref--6-4!./app/css/common.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!****************************!*\
+  !*** ./app/css/styles.css ***!
+  \****************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!****************************!*\
+  !*** ./app/css/styles.css ***!
+  \****************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js??ref--6-3!../../node_modules/postcss-loader/lib??ref--6-4!./styles.css */
+
+/*! ../../node_modules/style-loader/lib/addStyles.js */
+
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--6-3!./node_modules/postcss-loader/lib??ref--6-4!./app/css/styles.css ***!
+  \***********************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***************************!*\
+  !*** ./app/manifest.json ***!
+  \***************************/
+
+/*! exports provided: name, short_name, lang, start_url, display, theme_color, background_color, prefer_related_applications, icons, default */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***************************!*\
+  !*** ./app/manifest.json ***!
+  \***************************/
+
+/*! exports provided: name, short_name, lang, start_url, display, theme_color, background_color, prefer_related_applications, icons, default */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!****************************************************************************!*\
+  !*** ./node_modules/localforage-startswith/dist/localforage-startswith.js ***!
+  \****************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! localforage */
+
+/*!***********************!*\
+  !*** ./app/js/map.js ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! common-tags */
+
+/*! google-maps-promise/es2015 */
+
+/*! ./lazyload.es2015 */
+
+/*! ./db */
+
+/*!**********************************************************!*\
+  !*** ./node_modules/google-maps-promise/es2015/index.js ***!
+  \**********************************************************/
+
+/*! exports provided: load, release, urlSettings, defaultUrlSettings */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: ./app/js/map.js (referenced with cjs require) */
+
+/*!************************************!*\
+  !*** ./app/img sync ^\.\/.*\.jpg$ ***!
+  \************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/1.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!************************!*\
+  !*** ./app/img/10.jpg ***!
+  \************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/2.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/3.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/4.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/5.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/6.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/7.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/8.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!***********************!*\
+  !*** ./app/img/9.jpg ***!
+  \***********************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!******************************************!*\
+  !*** ./node_modules/focus-trap/index.js ***!
+  \******************************************/
+
+/*! no static exports found */
+
+/*! exports used: default */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! tabbable */
+
+/*!******************************!*\
+  !*** ./app/js/restaurant.js ***!
+  \******************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!******************************!*\
+  !*** ./app/js/restaurant.js ***!
+  \******************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! common-tags */
+
+/*! @material/dialog */
+
+/*! @material/textfield */
+
+/*! @material/ripple */
+
+/*! @material/form-field */
+
+/*! @material/radio */
+
+/*! @material/snackbar */
+
+/*! normalize.css/normalize.css */
+
+/*! css-star-rating */
+
+/*! ../css/common.scss */
+
+/*! ../css/dialog.scss */
+
+/*! ../css/styles.css */
+
+/*! ./lazyload.es2015 */
+
+/*! ../manifest.json */
+
+/*! ./map */
+
+/*! ./db */
+
+/*!****************************************!*\
+  !*** ./node_modules/tabbable/index.js ***!
+  \****************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!**********************************************************!*\
+  !*** ./node_modules/css-star-rating/css/star-rating.css ***!
+  \**********************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! !../../mini-css-extract-plugin/dist/loader.js!../../css-loader!../../sass-loader/lib/loader.js??ref--6-3!../../postcss-loader/lib??ref--6-4!./star-rating.css */
+
+/*! ../../style-loader/lib/addStyles.js */
+
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--6-3!./node_modules/postcss-loader/lib??ref--6-4!./node_modules/css-star-rating/css/star-rating.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!*****************************!*\
+  !*** ./app/css/dialog.scss ***!
+  \*****************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!*****************************!*\
+  !*** ./app/css/dialog.scss ***!
+  \*****************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*! !../../node_modules/mini-css-extract-plugin/dist/loader.js!../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js??ref--6-3!../../node_modules/postcss-loader/lib??ref--6-4!./dialog.scss */
+
+/*! ../../node_modules/style-loader/lib/addStyles.js */
+
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js??ref--6-3!./node_modules/postcss-loader/lib??ref--6-4!./app/css/dialog.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+
+/*! no static exports found */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Module is not an ECMAScript module */
+
+/*!****************************************************************!*\
+  !*** ./node_modules/@material/textfield/index.js + 23 modules ***!
+  \****************************************************************/
+
+/*! exports provided: MDCTextField, MDCTextFieldFoundation, MDCTextFieldHelperText, MDCTextFieldHelperTextFoundation, MDCTextFieldIcon, MDCTextFieldIconFoundation */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/component.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/foundation.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/index.js (<- Module is referenced from these modules with unsupported syntax: ./app/js/main.js (referenced with cjs require), ./app/js/restaurant.js (referenced with cjs require)) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/util.js */
+
+/*!****************************************************************!*\
+  !*** ./node_modules/@material/textfield/index.js + 23 modules ***!
+  \****************************************************************/
+
+/*! exports provided: MDCTextField, MDCTextFieldFoundation, MDCTextFieldHelperText, MDCTextFieldHelperTextFoundation, MDCTextFieldIcon, MDCTextFieldIconFoundation */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/component.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/foundation.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/index.js (<- Module is referenced from these modules with unsupported syntax: ./app/js/main.js (referenced with cjs require), ./app/js/restaurant.js (referenced with cjs require)) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/util.js */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!************************************************************!*\
+  !*** ./node_modules/@material/dialog/index.js + 3 modules ***!
+  \************************************************************/
+
+/*! exports provided: MDCDialogFoundation, util, MDCDialog */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/index.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/index.js (<- Module is referenced from these modules with unsupported syntax: ./app/js/main.js (referenced with cjs require), ./app/js/restaurant.js (referenced with cjs require)) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/focus-trap/index.js (<- Module is not an ECMAScript module) */
+
+/*!************************************************************!*\
+  !*** ./node_modules/@material/dialog/index.js + 3 modules ***!
+  \************************************************************/
+
+/*! exports provided: MDCDialogFoundation, util, MDCDialog */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/index.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/index.js (<- Module is referenced from these modules with unsupported syntax: ./app/js/main.js (referenced with cjs require), ./app/js/restaurant.js (referenced with cjs require)) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/focus-trap/index.js (<- Module is not an ECMAScript module) */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/@material/radio/index.js + 3 modules ***!
+  \***********************************************************/
+
+/*! exports provided: MDCRadio, MDCRadioFoundation */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/component.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/foundation.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/ripple/index.js (<- Module is referenced from these modules with unsupported syntax: ./app/js/main.js (referenced with cjs require), ./app/js/restaurant.js (referenced with cjs require)) */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/selection-control/index.js because of ./node_modules/@material/form-field/index.js */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*!****************************************************************!*\
+  !*** ./node_modules/@material/form-field/index.js + 3 modules ***!
+  \****************************************************************/
+
+/*! exports provided: MDCFormField, MDCFormFieldFoundation */
+
+/*! all exports used */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/component.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/base/foundation.js */
+
+/*! ModuleConcatenation bailout: Cannot concat with ./node_modules/@material/selection-control/index.js because of ./node_modules/@material/radio/index.js */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * @license
+ * Copyright 2017 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
